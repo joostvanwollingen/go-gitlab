@@ -74,8 +74,8 @@ type ListContributionEventsOptions struct {
 	ListOptions
 	Action     *EventTypeValue       `url:"action,omitempty" json:"action,omitempty"`
 	TargetType *EventTargetTypeValue `url:"target_type,omitempty" json:"target_type,omitempty"`
-	Before     *ISOTime              `url:"before,omitempty" json:"before,omitempty"`
-	After      *ISOTime              `url:"after,omitempty" json:"after,omitempty"`
+	Before     *string               `url:"before,omitempty" json:"before,omitempty"`
+	After      *string               `url:"after,omitempty" json:"after,omitempty"`
 	Sort       *string               `url:"sort,omitempty" json:"sort,omitempty"`
 }
 
